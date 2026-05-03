@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erhos Technology — Soluciones Digitales</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       HEADER / NAV
+  ═══════════════════════════════════════ -->
+  <header id="header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Erhos logo" class="logo-img">
+        <span class="logo-red">ERHOS</span><span class="logo-white">.TECH</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Inicio</a></li>
+        <li><a href="sobre-mi.html" class="nav-link">Sobre mí</a></li>
+        <li><a href="proceso.html" class="nav-link">Proceso</a></li>
+        <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <a href="https://wa.me/51960118562?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Escribir
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO — CARRUSEL
+    ═══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="carousel" id="carousel">
+
+        <div class="slide slide-1 active">
+          <video class="slide-video" autoplay loop muted playsinline>
+            <source src="Videos/PrincipalHome1.mp4" type="video/mp4">
+          </video>
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-tag">Lima, Perú · 2025</span>
+            <h1 class="slide-title">Soluciones digitales<br><em>para tu negocio</em></h1>
+            <p class="slide-sub">Transformamos tu idea en una presencia digital que genera resultados reales.</p>
+            <div class="slide-btns">
+              <a href="contacto.html" class="btn-primary">Cotizar proyecto</a>
+              <a href="#servicios" class="btn-ghost">Ver servicios</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slide-2">
+          <video class="slide-video" autoplay loop muted playsinline>
+            <source src="Videos/PrincipalHom2.mp4" type="video/mp4">
+          </video>
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-tag">Desarrollo Web</span>
+            <h1 class="slide-title">Páginas web<br><em>modernas y funcionales</em></h1>
+            <p class="slide-sub">Landing pages, sistemas a medida y herramientas que automatizan tu trabajo.</p>
+            <div class="slide-btns">
+              <a href="proyectos.html" class="btn-primary">Ver proyectos</a>
+              <a href="proceso.html" class="btn-ghost">Cómo trabajamos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slide-3">
+          <video class="slide-video" autoplay loop muted playsinline>
+            <source src="Videos/PrincipaHome3.mp4" type="video/mp4">
+          </video>
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-tag">Automatización</span>
+            <h1 class="slide-title">Tecnología que<br><em>ahorra tiempo</em></h1>
+            <p class="slide-sub">Automatizamos tareas repetitivas para que te enfoques en lo que importa.</p>
+            <div class="slide-btns">
+              <a href="contacto.html" class="btn-primary">Orientación gratis</a>
+              <a href="sobre-mi.html" class="btn-ghost">Quiénes somos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-dots" id="carouselDots">
+          <button class="dot active" data-index="0"></button>
+          <button class="dot" data-index="1"></button>
+          <button class="dot" data-index="2"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PRESENTACION BREVE
+    ═══════════════════════════════════════ -->
+    <section class="intro-strip">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <span class="section-tag">Erhos Technology</span>
+            <h2>Más allá del código —<br>resolvemos problemas reales</h2>
+            <p>Somos una iniciativa peruana enfocada en brindar soluciones tecnológicas a medida para emprendedores y empresas que buscan optimizar sus procesos y mejorar sus resultados.</p>
+            <div class="intro-btns">
+              <a href="#servicios" class="btn-primary">Ver servicios</a>
+              <a href="contacto.html" class="btn-outline">Contáctanos</a>
+            </div>
+          </div>
+          <div class="intro-stats">
+            <div class="stat-card">
+              <span class="stat-num">3</span>
+              <span class="stat-label">meses de garantía</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">50%</span>
+              <span class="stat-label">pago al inicio</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">orientación gratis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SERVICIOS
+    ═══════════════════════════════════════ -->
+    <section class="servicios" id="servicios">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">¿Qué ofrecemos?</span>
+          <h2>Soluciones a medida <strong>para cada necesidad</strong></h2>
+        </div>
+
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="service-header">
+              <div class="service-icon"><i class="fas fa-globe"></i></div>
+              <h3>Páginas Web</h3>
+            </div>
+            <div class="service-body">
+              <p>Landing pages y sitios web modernos, funcionales y con diseño profesional adaptado a tu negocio.</p>
+              <div class="service-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <div class="service-icon"><i class="fas fa-code"></i></div>
+              <h3>Software a Medida</h3>
+            </div>
+            <div class="service-body">
+              <p>Herramientas personalizadas según las necesidades específicas de tu empresa o emprendimiento.</p>
+              <div class="service-tags">
+                <span>Backend</span><span>Base de datos</span><span>API</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <div class="service-icon"><i class="fas fa-robot"></i></div>
+              <h3>Automatización</h3>
+            </div>
+            <div class="service-body">
+              <p>Eliminamos tareas repetitivas mediante scripts y sistemas que trabajan por ti las 24 horas.</p>
+              <div class="service-tags">
+                <span>Scripts</span><span>Procesos</span><span>Eficiencia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <div class="service-icon"><i class="fas fa-comments"></i></div>
+              <h3>Consultoría Gratis</h3>
+            </div>
+            <div class="service-body">
+              <p>Primera reunión sin costo para analizar tu caso y proponerte la solución más práctica y accesible.</p>
+              <div class="service-tags">
+                <span>Sin compromiso</span><span>Por WhatsApp</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PROCESO PREVIEW
+    ═══════════════════════════════════════ -->
+    <section class="proceso-preview">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Transparente y sin sorpresas</span>
+          <h2>Así trabajamos contigo</h2>
+        </div>
+        <div class="steps-track">
+          <div class="steps-grid">
+            <div class="step-col">
+              <div class="step-label">Me cuentas tu idea</div>
+              <div class="step-img-box"><img src="img/T1_Idea.jpg" alt="Idea"></div>
+            </div>
+            <div class="step-col">
+              <div class="step-label">Definimos alcance</div>
+              <div class="step-img-box"><img src="img/T2_Alcance.jpg" alt="Alcance"></div>
+            </div>
+            <div class="step-col">
+              <div class="step-label">Prototipo en Figma</div>
+              <div class="step-img-box"><img src="img/T3_Figma.jpg" alt="Figma"></div>
+            </div>
+            <div class="step-col">
+              <div class="step-label">Desarrollo + updates</div>
+              <div class="step-img-box"><img src="img/T4_Desarrollo.jpg" alt="Desarrollo"></div>
+            </div>
+            <div class="step-col">
+              <div class="step-label">Entrega y garantía</div>
+              <div class="step-img-box"><img src="img/T5_Entrega.jpg" alt="Entrega"></div>
+            </div>
+          </div>
+        </div>
+        <div class="proceso-cta">
+          <a href="proceso.html" class="btn-primary">Ver proceso completo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FAQ
+    ═══════════════════════════════════════ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq-layout">
+          <div class="faq-intro">
+            <span class="section-tag">FAQ</span>
+            <h2>Preguntas frecuentes</h2>
+            <p>Todo lo que necesitas saber antes de empezar tu proyecto.</p>
+          </div>
+
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿Cuánto cuesta una página web?
+                <span class="faq-icon"><i class="fas fa-play"></i></span>
+              </button>
+              <div class="faq-a">
+                <p>El precio depende del tipo de proyecto. Una landing page básica puede comenzar desde S/ 200. Un proyecto más completo varía según el alcance. Escríbenos por WhatsApp y te damos un presupuesto sin compromiso.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿Cuánto tiempo tarda el desarrollo?
+                <span class="faq-icon"><i class="fas fa-play"></i></span>
+              </button>
+              <div class="faq-a">
+                <p>Una landing page sencilla puede estar lista en 1 a 2 semanas. Un proyecto más completo, con varias páginas o base de datos, puede tomar entre 3 y 5 semanas. Siempre definimos el tiempo exacto antes de empezar.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿Necesito saber de tecnología para contratarlos?
+                <span class="faq-icon"><i class="fas fa-play"></i></span>
+              </button>
+              <div class="faq-a">
+                <p>Para nada. Solo necesitas tener clara tu idea o lo que quieres lograr. Nosotros nos encargamos de todo lo técnico y te explicamos cada paso en lenguaje sencillo.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿Qué pasa si necesito cambios después de la entrega?
+                <span class="faq-icon"><i class="fas fa-play"></i></span>
+              </button>
+              <div class="faq-a">
+                <p>Incluimos una garantía de 3 meses para corregir errores o problemas técnicos sin costo adicional. Si deseas agregar nuevas funcionalidades fuera del alcance original, se cotiza por separado.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿Puedo ver un prototipo antes de que desarrollen la página?
+                <span class="faq-icon"><i class="fas fa-play"></i></span>
+              </button>
+              <div class="faq-a">
+                <p>Sí. Durante los primeros 15 a 25 días trabajamos en un prototipo en Figma para que puedas ver cómo lucirá tu página antes de programarla. Así te aseguras de que todo esté como lo imaginabas.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CTA FINAL
+    ═══════════════════════════════════════ -->
+    <section class="cta-final">
+      <div class="container">
+        <h2>¿Listo para dar el gran paso digital?</h2>
+        <a href="https://wa.me/51960118562?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="btn-primary">
+          Orientación gratis sin compromiso
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo"><span class="logo-red">ERHOS</span><span class="logo-white">.TECH</span></span>
+          <p>Soluciones tecnológicas a medida para emprendedores y empresas en Lima, Perú.</p>
+          <div class="footer-socials">
+            <a href="https://www.tiktok.com/@erhos003" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/taypeluis" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/RivasMichael" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/51960118562" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="proceso.html">Proceso</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto directo</h4>
+          <p><i class="fab fa-whatsapp"></i> 960 118 562</p>
+          <p><i class="fab fa-tiktok"></i> @erhos003</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Erhos Technology · Lima, Perú · Todos los derechos reservados</p>
+        <a href="politica-privacidad.html">Política de privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
