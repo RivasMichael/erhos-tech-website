@@ -1142,7 +1142,8 @@ p { line-height: 1.7; font-size: 1.08rem; }
   box-shadow: 0 2px 12px rgba(204,0,0,0.1);
 }
 .social-link-card.disabled { opacity: 0.45; cursor: default; }
-.social-link-card .fab { font-size: 1.4rem; color: var(--rojo); flex-shrink: 0; }
+.social-link-card .fab,
+.social-link-card .fas { font-size: 1.4rem; color: var(--rojo); flex-shrink: 0; }
 .social-link-card span { font-size: 0.75rem; color: #888; display: block; }
 .social-link-card strong { font-size: 0.95rem; color: var(--negro); display: block; }
 
@@ -1290,6 +1291,7 @@ p { line-height: 1.7; font-size: 1.08rem; }
   .mv-grid        { grid-template-columns: 1fr; }
   .audience-grid  { grid-template-columns: repeat(2, 1fr); }
   .contacto-grid  { grid-template-columns: 1fr; gap: 48px; }
+  .contacto-section { padding: 72px 0; }
   .footer-grid    { grid-template-columns: 1fr 1fr; gap: 36px; }
   .faq-layout     { grid-template-columns: 1fr; }
   .faq-image      { display: none; }
@@ -1345,6 +1347,15 @@ p { line-height: 1.7; font-size: 1.08rem; }
 
   /* Footer */
   .footer-grid { grid-template-columns: 1fr; }
+
+  /* Contacto */
+  .contacto-section { padding: 60px 0; }
+  .contacto-grid { gap: 40px; }
+  .whatsapp-big { padding: 16px 20px; gap: 14px; }
+  .whatsapp-big .fab { font-size: 1.6rem; }
+  .whatsapp-big strong { font-size: 1.05rem; }
+  .social-link-card { padding: 14px 16px; gap: 14px; }
+  .social-link-card strong { font-size: 0.88rem; }
 }
 
 /* ── Smooth reveal animation ────────────── */
