@@ -63,16 +63,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const INTERVAL = 5000; // 5 segundos
 
     function goToSlide(index) {
-      // Quita activo de todos
+      const outVid = slides[currentSlide].querySelector('video');
+      if (outVid) outVid.pause();
+
       slides[currentSlide].classList.remove('active');
       if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
 
-      // Calcula el nuevo índice (loop)
       currentSlide = (index + slides.length) % slides.length;
 
-      // Activa el nuevo
       slides[currentSlide].classList.add('active');
       if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+
+      const inVid = slides[currentSlide].querySelector('video');
+      if (inVid) {
+        inVid.currentTime = 0;
+        inVid.play().catch(() => {});
+      }
     }
 
     function startAutoplay() {
@@ -133,6 +139,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+
+    // Pausa los slides que no son el inicial
+    slides.forEach((slide, i) => {
+      const vid = slide.querySelector('video');
+      if (vid && i !== 0) vid.pause();
+    });
 
     // Inicia autoplay
     startAutoplay();

@@ -357,16 +357,16 @@ p { line-height: 1.7; font-size: 1.08rem; }
   text-transform: uppercase;
   padding: 5px 14px;
   border-radius: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .slide-title {
   color: var(--blanco);
   max-width: 820px;
-  margin-bottom: 24px;
-  font-size: clamp(4rem, 9.5vw, 8rem);
+  margin-bottom: 20px;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
   letter-spacing: 0.05em;
-  line-height: 0.88;
+  line-height: 1.0;
   text-shadow:
     0 2px 10px rgba(0,0,0,0.7),
     0 4px 40px rgba(0,0,0,0.4);
@@ -380,9 +380,9 @@ p { line-height: 1.7; font-size: 1.08rem; }
 
 .slide-sub {
   color: rgba(255,255,255,0.75);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   max-width: 500px;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
 
 .slide-btns {
