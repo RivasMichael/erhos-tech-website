@@ -220,8 +220,8 @@ p { line-height: 1.7; font-size: 1.08rem; }
   gap: 8px;
 }
 .logo-img {
-  height: 36px;
-  width: 36px;
+  height: 60px;
+  width: 60px;
   object-fit: contain;
   border-radius: 50%;
 }
@@ -1247,14 +1247,17 @@ p { line-height: 1.7; font-size: 1.08rem; }
   transition: color var(--transition);
 }
 .footer-links a:hover { color: var(--rojo); }
-.footer-contact p {
+.footer-contact p,
+.footer-contact a {
   color: var(--gris3);
   font-size: 0.96rem;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: color var(--transition);
 }
+.footer-contact a:hover { color: var(--rojo); }
 .footer-contact .fab { color: var(--rojo); }
 
 .footer-bottom {
